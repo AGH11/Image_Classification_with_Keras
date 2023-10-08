@@ -32,3 +32,43 @@ The trained model is saved in two parts:
 - `model_weights.h5`: HDF5 file containing the trained model weights.
 
 Feel free to modify the script and experiment with different hyperparameters for further improvement.
+
+
+
+# CIFAR-10 Image Classification - Inference
+
+This repository provides a simple script for classifying images using a pre-trained Convolutional Neural Network (CNN) on the CIFAR-10 dataset.
+
+## Usage
+1. Ensure you have the required dependencies installed:
+
+   ```bash
+   pip install keras numpy
+   ```
+
+2. Download the pre-trained model files (`model_structure.json` and `model_weights.h5`).
+
+3. Run the provided Python script to classify an image:
+
+   ```python
+   python classify_image.py
+   ```
+
+## Model Loading and Inference
+The script loads the pre-trained model architecture from `model_structure.json` and weights from `model_weights.h5`. It then uses the model to classify a sample image (`frog.png` by default).
+
+The predicted class label and likelihood are printed to the console.
+
+Feel free to replace the sample image with your own and explore the model's predictions.
+
+**Class Labels:**
+- Plane
+- Car
+- Bird
+- Cat
+- Deer
+- Dog
+- Frog
+- Horse
+- Boat
+- Truck
